@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Allan Lyra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0853c5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #fbbc04;
+      text-align: center;
+      font-size: 52px;
+      margin: 10px 0;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 100px); /* Altura total menos o título */
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .mapa {
+      flex: 1;
+      padding-right: 10px;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .botoes {
+      width: 300px;
+      align-items: center;
+      display: flex;
+      size-adjust: 50%;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .botoes input[type="button"] {
+      width: 290px;
+      padding: 10px;
+      font-size: 20px;
+      
+      font-weight:bold;
+      cursor: pointer;
+      background-color: #160066;
+      border:5px rgb(255, 255, 255);
+      border-style:groove;
+      border-radius: 15px;
+      color: #ffffff;
+      box-sizing:border-box;
+    }
+
+    .botoes a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dashboard Allan Lyra</h1>
+  <div class="container">
+    <div class="mapa">
+      <iframe 
+        src="https://www.google.com/maps/d/embed?mid=1VQ-2nweXycVPQkgKV2UFouYiorDQ6dQ&hl=pt-BR&ehbc=2E312F">
+      </iframe>
+    </div>
+    <div class="botoes">
+      <a href="https://docs.google.com/spreadsheets/d/1b9Oli91356Af2Cviaw0-1KR1cRWQ-sJQI3jw43CVx5Q/edit?usp=sharing">
+        <input type="button" value="Pesquisa de Proposituras">
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1EJ3IAloFwPRjfD5gMrKuUcXRqkZ7mIsUJYgVcnUAwpM/edit?usp=sharing">
+        <input type="button" value="Pesquisa de Indicações">
+      </a>
+            <a href="https://www.google.com/maps/d/u/1/viewer?hl=pt-BR&mid=1VQ-2nweXycVPQkgKV2UFouYiorDQ6dQ&ll=-22.914611056046578%2C-43.067612541117775&z=12">
+        <input type="button" value="Mapa de Indicações">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
