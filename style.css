@@ -45,6 +45,8 @@ header img {
 
 .botoes input[type="button"]:hover {
   background-color: #2a0099;
+  color: #ffc600;
+  border-color: #ffc600;
 }
 
 .mapa {
@@ -60,6 +62,7 @@ header img {
   border: none;
   margin: 0 40px;
 }
+
 
 
 
