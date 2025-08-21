@@ -5,23 +5,52 @@ body {
   padding: 0;
 }
 
-h1 {
-  color: #fbbc04;
+header {
   text-align: center;
-  font-size: 52px;
-  margin: 10px 0;
+  padding: 10px;
 }
 
-.container {
+header img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
+.botoes {
   display: flex;
-  height: calc(100vh - 100px); /* Altura total menos o título */
-  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* permite quebrar linha no celular */
+  gap: 15px;
+  margin: 15px auto;
+  padding: 0 10px;
+}
+
+.botoes a {
+  text-decoration: none;
+}
+
+.botoes input[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #160066;
+  border: 3px groove white;
+  border-radius: 12px;
+  color: #ffffff;
   box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.botoes input[type="button"]:hover {
+  background-color: #2a0099;
 }
 
 .mapa {
-  flex: 1;
-  padding-right: 10px;
+  width: 100%;
+  height: calc(100vh - 200px); /* ocupa tela inteira menos header e botões */
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box;
 }
 
 .mapa iframe {
@@ -29,30 +58,3 @@ h1 {
   height: 100%;
   border: none;
 }
-
-.botoes {
-  width: 300px;
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.botoes input[type="button"] {
-  width: 290px;
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #160066;
-  border: 5px groove white;
-  border-radius: 15px;
-  color: #ffffff;
-  box-sizing: border-box;
-}
-
-.botoes a {
-  text-decoration: none;
-}
-
