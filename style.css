@@ -50,18 +50,19 @@ header img {
 }
 
 .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: calc(100vh - 200px); /* ocupa tela inteira menos header e botões */
+  height: calc(100vh - 200px);
   padding: 0 10px 10px 10px;
   box-sizing: border-box;
 }
 
 .mapa iframe {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   border: none;
-  margin: 0 40px;
-  align-items: center;
 }
 
 
