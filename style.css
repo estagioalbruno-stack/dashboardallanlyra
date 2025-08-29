@@ -67,12 +67,14 @@ header img {
 
 .titulomapa {
   text-align: center;
+  justify-content: center;
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom:0px;
 }
+
 
 
 
