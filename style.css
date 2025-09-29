@@ -82,6 +82,19 @@ header img {
   margin-bottom:0px;
 }
 
+.iframe-planilha {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+.iframe-planilha iframe {
+  border: none;
+  width: 90%;
+  height: 500px;
+  max-width: 1000px;
+}
+
 
 
 
