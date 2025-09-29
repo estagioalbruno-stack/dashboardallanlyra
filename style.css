@@ -75,13 +75,22 @@ header img {
     box-sizing: border-box;
 }
 
-.mapa iframe, .iframe-planilha iframe {
+/* Regra mantida para o mapa, com altura proporcional */
+.mapa iframe {
     width: 85%;
     max-width: 1400px;
     aspect-ratio: 16 / 9;
     border: 3px groove white;
     border-radius: 12px;
 }
+
+/* Nova regra específica para o iframe da planilha com altura fixa */
+.iframe-planilha iframe {
+    width: 85%;
+    max-width: 1400px;
+    height: 700px; /* <-- Altura adicionada aqui! */
+    border: 3px groove white;
+    border-radius: 1
 
 
 
