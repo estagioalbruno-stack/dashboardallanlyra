@@ -91,9 +91,10 @@ header img {
 .iframe-planilha iframe {
   border: none;
   width: 90%;
-  height: 500px;
+  height: 200px;
   max-width: 1000px;
 }
+
 
 
 
