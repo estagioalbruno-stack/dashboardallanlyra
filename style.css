@@ -84,13 +84,15 @@ header img {
     border-radius: 12px;
 }
 
-/* Nova regra específica para o iframe da planilha com altura fixa */
+/* iframe da planilha agora é RESPONSIVO */
 .iframe-planilha iframe {
     width: 85%;
     max-width: 1400px;
-    height: 700px; /* <-- Altura adicionada aqui! */
+    height: 80vh; /* Ocupa 80% da altura da tela do dispositivo */
+    max-height: 700px; /* Limite MÁXIMO de altura em telas grandes */
     border: 3px groove white;
-    border-radius: 1
+    border-radius: 12px;
+}
 
 
 
