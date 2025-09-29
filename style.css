@@ -19,7 +19,7 @@ header img {
 .botoes {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* permite quebrar linha no celular */
+    flex-wrap: wrap;
     gap: 15px;
     margin: 15px auto;
     padding: 0 10px;
@@ -30,10 +30,10 @@ header img {
 }
 
 .botoes input[type="button"] {
-    flex: 1 1 150px; /* ocupa espaço igualmente */
-    min-width: 120px; /* largura mínima para celular */
-    max-width: 200px; /* largura máxima para desktop */
-    height: 50px; /* altura fixa */
+    flex: 1 1 150px;
+    min-width: 120px;
+    max-width: 200px;
+    height: 50px;
     
     display: flex;
     align-items: center;
@@ -66,24 +66,23 @@ header img {
     margin-bottom: 10px;
 }
 
-/* Regra unificada para os contêineres do mapa e da planilha */
 .mapa, .iframe-planilha {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0 10px 20px 10px; /* Adiciona um espaço inferior */
+    padding: 0 10px 20px 10px; 
     box-sizing: border-box;
 }
 
-/* Regra unificada para os iframes, garantindo que tenham o mesmo tamanho */
 .mapa iframe, .iframe-planilha iframe {
-    width: 85%; /* Largura de 85% da tela */
-    height: calc(100vh - 250px); /* Altura dinâmica (altura da tela - 250px) */
-    border: 3px groove white; /* Adicionando uma borda para destaque */
-    border-radius: 12px; /* Cantos arredondados */
-    max-width: 1400px; /* Opcional: define uma largura máxima para telas muito grandes */
+    width: 85%;
+    height: calc(100vh - 250px);
+    border: 3px groove white;
+    border-radius: 12px;
+    max-width: 1400px; 
 }
+
 
 
 
