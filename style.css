@@ -77,10 +77,10 @@ header img {
 
 .mapa iframe, .iframe-planilha iframe {
     width: 85%;
-    height: calc(100vh - 400px);
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
     border: 3px groove white;
     border-radius: 12px;
-    max-width: 1400px; 
 }
 
 
