@@ -86,14 +86,11 @@ header img {
 
 /* iframe da planilha agora é RESPONSIVO */
 .iframe-planilha iframe {
-    width: 1177px;
-    max-width: 1177px;
-    height: 80vh; /* Ocupa 80% da altura da tela do dispositivo */
-    max-height: 700px; /* Limite MÁXIMO de altura em telas grandes */
-    border: 3px groove white;
-    border-radius: 12px;
+    width: 1160.8px;
+    max-width: 1160.8px;
+    height: 332px; /* Ocupa 80% da altura da tela do dispositivo */
+    max-height: 332px; /* Limite MÁXIMO de altura em telas grandes */
 }
-
 
 
 
