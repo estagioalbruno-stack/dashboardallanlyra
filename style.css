@@ -1,104 +1,89 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0853c5;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0853c5;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  text-align: center;
-  padding: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 header img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .botoes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* permite quebrar linha no celular */
-  gap: 15px;
-  margin: 15px auto;
-  padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* permite quebrar linha no celular */
+    gap: 15px;
+    margin: 15px auto;
+    padding: 0 10px;
 }
 
 .botoes a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .botoes input[type="button"] {
-  flex: 1 1 150px; /* ocupa espaço igualmente */
-  min-width: 120px; /* largura mínima para celular */
-  max-width: 200px; /* largura máxima para desktop */
-  height: 50px; /* altura fixa */
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #160066;
-  border: 3px groove white;
-  border-radius: 12px;
-  color: #ffffff;
-  box-sizing: border-box;
-  transition: 0.2s;
+    flex: 1 1 150px; /* ocupa espaço igualmente */
+    min-width: 120px; /* largura mínima para celular */
+    max-width: 200px; /* largura máxima para desktop */
+    height: 50px; /* altura fixa */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #160066;
+    border: 3px groove white;
+    border-radius: 12px;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: 0.2s;
 }
 
 .botoes input[type="button"]:hover {
-  background-color: #2a0099;
-  color: #ffc600;
-  border-color: #ffc600;
-}
-
-.mapa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: calc(100vh - 200px);
-  padding: 0 10px 10px 10px;
-  box-sizing: border-box;
-}
-
-.mapa iframe {
-  width: 80%;
-  height: 80%;
-  border: none;
+    background-color: #2a0099;
+    color: #ffc600;
+    border-color: #ffc600;
 }
 
 .titulomapa {
-  text-align: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom:0px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.iframe-planilha {
-  display: flex;
-  justify-content: center;
-  padding: 20px 10px;
-  box-sizing: border-box;
-}
-.iframe-planilha iframe {
-  border: none;
-  width: 90%;
-  height: 200px;
-  max-width: 1000px;
+/* Regra unificada para os contêineres do mapa e da planilha */
+.mapa, .iframe-planilha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px 20px 10px; /* Adiciona um espaço inferior */
+    box-sizing: border-box;
 }
 
-
-
-
-
+/* Regra unificada para os iframes, garantindo que tenham o mesmo tamanho */
+.mapa iframe, .iframe-planilha iframe {
+    width: 85%; /* Largura de 85% da tela */
+    height: calc(100vh - 250px); /* Altura dinâmica (altura da tela - 250px) */
+    border: 3px groove white; /* Adicionando uma borda para destaque */
+    border-radius: 12px; /* Cantos arredondados */
+    max-width: 1400px; /* Opcional: define uma largura máxima para telas muito grandes */
+}
 
 
 
