@@ -77,20 +77,23 @@ header img {
 
 /* Regra mantida para o mapa, com altura proporcional */
 .mapa iframe {
-    width: 85%;
-    max-width: 1400px;
+    width: 1162.8px;
+    max-width: 1162.8px;
     aspect-ratio: 16 / 9;
-    border: 3px groove white;
+    border: 3px white;
     border-radius: 12px;
 }
 
 /* iframe da planilha agora é RESPONSIVO */
 .iframe-planilha iframe {
-    width: 1160.8px;
-    max-width: 1160.8px;
+    width: 1162.8px;
+    max-width: 1162.8px;
     height: 332px; /* Ocupa 80% da altura da tela do dispositivo */
     max-height: 332px; /* Limite MÁXIMO de altura em telas grandes */
+    border: 3px white;
+    border-radius: 12px;
 }
+
 
 
 
